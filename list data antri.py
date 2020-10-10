@@ -11,7 +11,7 @@ cmd = " "
 while cmd!= '4':
     print("1. List names")
     print("2. Add name")
-    print("3. Call next patient")
+    print("3. Selanjutnya")
     print("\n4.Quit")
     
     cmd = input("\rCommand: ")
@@ -26,11 +26,11 @@ while cmd!= '4':
         names.append(newName)
     elif cmd == '3':
         if len(names) == 0:
-            print("There are no more patients!")
+            print("Tidak ada nama selanjutnya")
         else:
-            nextPatient = names[0]
+            nameSelanjutnya = names[0]
             names.remove(nextPatient)
-            print("Calling %s" % nextPatient)
+            print("Calling %s" % nameSelanjutnya)
     elif cmd !='4':
         print("Invalid command!")
     
